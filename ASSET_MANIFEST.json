@@ -1,0 +1,698 @@
+{
+  "publicationAllowed": true,
+  "privateSourceCommit": "ecdc76639fadca5314f64a77b3cf9634e9e0a3d7",
+  "cards": [
+    {
+      "id": "ichigo",
+      "cardId": "v06_ichigo_bankai",
+      "character": "Ichigo Kurosaki",
+      "camp": "Shinigami",
+      "cardName": "Ichigo Kurosaki — Bankai",
+      "form": "Bankai",
+      "rarity": "SR",
+      "sourcePath": "client_v597/public/thumbnails/f47c4f1dedf91e443fe2.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 85006,
+      "sourceSha256": "cd301cb462a32d52ad043087365352ca355bfac3c1352f102695bd3dd909c5dc",
+      "plannedPublicPath": "images/cards/ichigo-720.webp",
+      "preview": "ichigo-720.webp",
+      "variants": {
+        "360": {
+          "file": "ichigo-360.webp",
+          "bytes": 39054,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "636f5a23bdc23ba9b7b9e66e36b81a5d557c2e107dcba623a712881e9fd32312"
+        },
+        "720": {
+          "file": "ichigo-720.webp",
+          "bytes": 81182,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "4cfdc103957575d512026b036cbf434aacbe67d971453934fa735215770550dc"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "byakuya",
+      "cardId": "v029_byakuya_bankai",
+      "character": "Byakuya Kuchiki",
+      "camp": "Shinigami",
+      "cardName": "Byakuya Kuchiki — Bankai",
+      "form": "Bankai",
+      "rarity": "UR",
+      "sourcePath": "client_v597/public/thumbnails/d0586258bcc679359c45.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 107312,
+      "sourceSha256": "07aae2a18118995873106b42eaa48578ce34044d7c4c021875eaf879693f052b",
+      "plannedPublicPath": "images/cards/byakuya-720.webp",
+      "preview": "byakuya-720.webp",
+      "variants": {
+        "360": {
+          "file": "byakuya-360.webp",
+          "bytes": 46334,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "8dcaebec6562795a3ec94b83200f02c02a3e0d7f242951223a3a6c7ad6491375"
+        },
+        "720": {
+          "file": "byakuya-720.webp",
+          "bytes": 101510,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "ac8132b6f470df04ee6d9afdcbdff3aac82b544ee5db46ab61e291cd07aecf40"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "rukia",
+      "cardId": "v025_rukia_bankai",
+      "character": "Rukia Kuchiki",
+      "camp": "Shinigami",
+      "cardName": "Rukia Kuchiki — Bankai",
+      "form": "Bankai",
+      "rarity": "SR",
+      "sourcePath": "client_v597/public/thumbnails/a3e2044801c244f929e8.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 87574,
+      "sourceSha256": "e2132b3867e1ba394f07d1cff03066136a26fc2d1918f861918e2ef209833959",
+      "plannedPublicPath": "images/cards/rukia-720.webp",
+      "preview": "rukia-720.webp",
+      "variants": {
+        "360": {
+          "file": "rukia-360.webp",
+          "bytes": 39434,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "e18d7f65376436470124249dbbd896158cce6a78a6ad2b1e40059574e9c29782"
+        },
+        "720": {
+          "file": "rukia-720.webp",
+          "bytes": 82876,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "fc67dd445c88f65e8a4c4b5e1d2fb72c46bb0bfaa7e7234d4814ae3279c633e7"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "kenpachi",
+      "cardId": "v028_kenpachi_shikai",
+      "character": "Kenpachi Zaraki",
+      "camp": "Shinigami",
+      "cardName": "Kenpachi Zaraki — Shikai",
+      "form": "Shikai",
+      "rarity": "UR",
+      "sourcePath": "client_v597/public/thumbnails/27f07dc54f1f128aa06b.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 70614,
+      "sourceSha256": "060725d34eb709853cea5c432a3b24021b583cdc213bc3004ea458f1c2fb6d66",
+      "plannedPublicPath": "images/cards/kenpachi-720.webp",
+      "preview": "kenpachi-720.webp",
+      "variants": {
+        "360": {
+          "file": "kenpachi-360.webp",
+          "bytes": 33282,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "058f57a1c66617b448d6af7f4afacbe93d486349132bcb0d9e60577fd17a5471"
+        },
+        "720": {
+          "file": "kenpachi-720.webp",
+          "bytes": 67530,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "55213dd62df933f7b50da3653403d48f0098f532c010ad1fde9280ac745e6e92"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "yamamoto",
+      "cardId": "v714_yamamoto_bankai",
+      "character": "Genryūsai Yamamoto",
+      "camp": "Shinigami",
+      "cardName": "Genryūsai Yamamoto — Bankai",
+      "form": "Bankai",
+      "rarity": "UR",
+      "sourcePath": "client_v597/public/thumbnails/e9ef54d29b8b4621aa10.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 81022,
+      "sourceSha256": "f184e0ddd474d83a2ffc07b240f35fc7f03b94101f054ba7b7df77a2928b27c7",
+      "plannedPublicPath": "images/cards/yamamoto-720.webp",
+      "preview": "yamamoto-720.webp",
+      "variants": {
+        "360": {
+          "file": "yamamoto-360.webp",
+          "bytes": 37582,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "7bee49e0d9754f5b15a438607effb522116aca8785d4cd09ff249f5200ea5cd9"
+        },
+        "720": {
+          "file": "yamamoto-720.webp",
+          "bytes": 77038,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "b71b33d3803ac44663ccdd4085b020d51cea01482ee7e3674d22462c2e9da8eb"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "yhwach",
+      "cardId": "v014_yhwach_soul",
+      "character": "Yhwach",
+      "camp": "Quincy",
+      "cardName": "Yhwach — Roi spirituel",
+      "form": "Roi spirituel",
+      "rarity": "UR",
+      "sourcePath": "client_v597/public/thumbnails/23d9f6591f216065b628.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 94446,
+      "sourceSha256": "68693dcdd2c660e6e153e9034ae19370de8a24028afd913f2187645f25c964e4",
+      "plannedPublicPath": "images/cards/yhwach-720.webp",
+      "preview": "yhwach-720.webp",
+      "variants": {
+        "360": {
+          "file": "yhwach-360.webp",
+          "bytes": 43274,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "cfc410eee5aad4edcdf821a88fc218f16f21fc0cf0b75c310aabddaef7500042"
+        },
+        "720": {
+          "file": "yhwach-720.webp",
+          "bytes": 87662,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "1108b33539aa1cc4f7055a7f790735861697b6fbb5c10e39309d9a37bd19f5e5"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "uryu",
+      "cardId": "v016_uryu",
+      "character": "Uryū Ishida",
+      "camp": "Quincy",
+      "cardName": "Uryū Ishida — Sternritter",
+      "form": "Sternritter",
+      "rarity": "UR",
+      "sourcePath": "client_v597/public/thumbnails/a325e30861903eaedf6c.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 85454,
+      "sourceSha256": "81b4bc06230feca531f26bf053cd8c3fe8562a9c6e59c8058f1b3a37682c984d",
+      "plannedPublicPath": "images/cards/uryu-720.webp",
+      "preview": "uryu-720.webp",
+      "variants": {
+        "360": {
+          "file": "uryu-360.webp",
+          "bytes": 39498,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "e63e2d806ca5113371dcb3921a976721678d3b6e251be4a134b8a6e99c734897"
+        },
+        "720": {
+          "file": "uryu-720.webp",
+          "bytes": 81388,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "74d00f9bcbe933a723f68c47107316af1e663d9d97cdcf5115790354e1da8cfd"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "bambietta",
+      "cardId": "v08_bambietta",
+      "character": "Bambietta Basterbine",
+      "camp": "Quincy",
+      "cardName": "Bambietta Basterbine — Sternritter",
+      "form": "Sternritter",
+      "rarity": "SR",
+      "sourcePath": "client_v597/public/thumbnails/aadb07e57b6a32aacdbd.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 85936,
+      "sourceSha256": "f7618849f2efc3445e65983a750a80b1b7a91e3c8f6deecd0cc9de2d4b236415",
+      "plannedPublicPath": "images/cards/bambietta-720.webp",
+      "preview": "bambietta-720.webp",
+      "variants": {
+        "360": {
+          "file": "bambietta-360.webp",
+          "bytes": 39236,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "a1a3a79bcec79e69392352986640da60a8f76b40a4fcb518f0313bc0cda4c103"
+        },
+        "720": {
+          "file": "bambietta-720.webp",
+          "bytes": 81560,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "d33a66e1f86461f7a2eed1f740794c805094587ac6b7eb86101d79056a2b8bb3"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "bazz-b",
+      "cardId": "v015_bazzb",
+      "character": "Bazz-B",
+      "camp": "Quincy",
+      "cardName": "Bazz-B — Sternritter",
+      "form": "Sternritter",
+      "rarity": "N",
+      "sourcePath": "client_v597/public/thumbnails/a96691313197021e2a77.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 86060,
+      "sourceSha256": "3031b6d43e7c35ce22c956922d7cbe2311cd258cecdaf487caaee84b57c59ae2",
+      "plannedPublicPath": "images/cards/bazz-b-720.webp",
+      "preview": "bazz-b-720.webp",
+      "variants": {
+        "360": {
+          "file": "bazz-b-360.webp",
+          "bytes": 39706,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "1be0cc3a0ff17b0cd3ea5f8e09c8838da52e21fce2bc678fe5e4d87a48b87619"
+        },
+        "720": {
+          "file": "bazz-b-720.webp",
+          "bytes": 81826,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "3e5d60dd616a98c5aec5e01fa53071eb1514877d95a8cad7ec93bd37f3f26c42"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "jugram",
+      "cardId": "v015_jugram_chaos",
+      "character": "Jugram Haschwalth",
+      "camp": "Quincy",
+      "cardName": "Jugram Haschwalth — Chaos",
+      "form": "Chaos",
+      "rarity": "UR",
+      "sourcePath": "client_v597/public/thumbnails/eea1e9efa3a94cc97a78.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 62172,
+      "sourceSha256": "0472e46b79e4d3ec46347dea9eec1faaa6164d35b9e038636b7559fb585fb214",
+      "plannedPublicPath": "images/cards/jugram-720.webp",
+      "preview": "jugram-720.webp",
+      "variants": {
+        "360": {
+          "file": "jugram-360.webp",
+          "bytes": 28346,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "33c7189e0fe774b8b6257e8a15fbd72d8c2f1c9ba453b62c83f61a7056756065"
+        },
+        "720": {
+          "file": "jugram-720.webp",
+          "bytes": 58584,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "3d7c9ef7bbfbf39a931ce7bdff4bb40411c5ad8ea3c391568017cad4202e4a3c"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "ulquiorra",
+      "cardId": "v020_ulquiorra_secunda",
+      "character": "Ulquiorra Schifer",
+      "camp": "Hollow",
+      "cardName": "Ulquiorra Schifer — Secunda Etapa",
+      "form": "Secunda Etapa",
+      "rarity": "UR",
+      "sourcePath": "client_v597/public/thumbnails/e0f9215cc0bf92ddc17b.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 83944,
+      "sourceSha256": "710802690fe96396a0ea73cf99cdc4fffd1cbb8d087affaf3b402b5fedf623b9",
+      "plannedPublicPath": "images/cards/ulquiorra-720.webp",
+      "preview": "ulquiorra-720.webp",
+      "variants": {
+        "360": {
+          "file": "ulquiorra-360.webp",
+          "bytes": 36810,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "aff6639bbd91e0673199807b66353bc5feb89b6513b489ae2f0bbbda6d3ab208"
+        },
+        "720": {
+          "file": "ulquiorra-720.webp",
+          "bytes": 80178,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "722743d64525feefacbb67214ed65e55129394ad161022114331a2d8321d10dd"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "grimmjow",
+      "cardId": "v08_grimmjow_ress",
+      "character": "Grimmjow Jaggerjack",
+      "camp": "Hollow",
+      "cardName": "Grimmjow Jaggerjack — Ressurrección",
+      "form": "Ressurrección",
+      "rarity": "R",
+      "sourcePath": "client_v597/public/thumbnails/c96d4704b3c5686db6d1.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 106724,
+      "sourceSha256": "cb350b1268b7c5e38a591197a841968b3f86741cc55996756dd0b5090e56ac6c",
+      "plannedPublicPath": "images/cards/grimmjow-720.webp",
+      "preview": "grimmjow-720.webp",
+      "variants": {
+        "360": {
+          "file": "grimmjow-360.webp",
+          "bytes": 48296,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "d765c4cfa204a54ad99d0db277af5ab1659457e8671a16d84d35d2a043e42bb5"
+        },
+        "720": {
+          "file": "grimmjow-720.webp",
+          "bytes": 101820,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "f06578397ab5a852a9ed96abca18896fa0532ea2fb8d0081f8d86fd64fc45c15"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "barragan",
+      "cardId": "v022_barragan_ress",
+      "character": "Barragan",
+      "camp": "Hollow",
+      "cardName": "Barragan — Ressurrección",
+      "form": "Ressurrección",
+      "rarity": "SR",
+      "sourcePath": "client_v597/public/thumbnails/b0abfff89ed24cc932a2.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 64814,
+      "sourceSha256": "d09da0e9bba83618f9a369ddc746651fb0cbc105e5d34fe227dfa12afb0aaa11",
+      "plannedPublicPath": "images/cards/barragan-720.webp",
+      "preview": "barragan-720.webp",
+      "variants": {
+        "360": {
+          "file": "barragan-360.webp",
+          "bytes": 29880,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "072c866a6579ecc67a9292bd60ef7d0bf2e61271fa965fec3b2a4d283679f93c"
+        },
+        "720": {
+          "file": "barragan-720.webp",
+          "bytes": 61732,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "8c7b700a0c3b3d3c17fb1f14cfa34869021cec885021c4662e62692c0174e11f"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "starrk",
+      "cardId": "v610_starrk_los_lobos",
+      "character": "Coyote Starrk",
+      "camp": "Hollow",
+      "cardName": "Coyote Starrk — Los Lobos",
+      "form": "Los Lobos",
+      "rarity": "SR",
+      "sourcePath": "client_v597/public/thumbnails/116d69b15b8c8c36657a.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 87152,
+      "sourceSha256": "635301855b3e7dce290537a18d66649d0ac11d3cd1227ac331715afe46be9ee0",
+      "plannedPublicPath": "images/cards/starrk-720.webp",
+      "preview": "starrk-720.webp",
+      "variants": {
+        "360": {
+          "file": "starrk-360.webp",
+          "bytes": 39294,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "a3fcf25645d4d518beb7f8c684d61c34cee31d33ec6abdb84da6ec1943755ead"
+        },
+        "720": {
+          "file": "starrk-720.webp",
+          "bytes": 82826,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "0209383a1c05ccfdf46ee1cf90df3fac26854da9425621f71d6c95db5e684165"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    },
+    {
+      "id": "nelliel",
+      "cardId": "v023_nelliel_ress",
+      "character": "Nelliel",
+      "camp": "Hollow",
+      "cardName": "Nelliel — Ressurrección",
+      "form": "Ressurrección",
+      "rarity": "R",
+      "sourcePath": "client_v597/public/thumbnails/636f0eb241f93a08a651.webp",
+      "sourceDimensions": [
+        512,
+        715
+      ],
+      "sourceBytes": 77380,
+      "sourceSha256": "6840f4c96ec421ed7a82a533a5af4c09c26546b4fc1a80dcd56768862c0ec37c",
+      "plannedPublicPath": "images/cards/nelliel-720.webp",
+      "preview": "nelliel-720.webp",
+      "variants": {
+        "360": {
+          "file": "nelliel-360.webp",
+          "bytes": 34048,
+          "dimensions": [
+            360,
+            503
+          ],
+          "sha256": "77c12538771d652017bf3c8980255010776b9b86113370cb01afd1ab4e1acfca"
+        },
+        "720": {
+          "file": "nelliel-720.webp",
+          "bytes": 73786,
+          "dimensions": [
+            512,
+            715
+          ],
+          "sha256": "b6fc3a3cd4bc8a7fb58454d7f18161f4f9d1a4b41139432d755bf947f0974e19"
+        }
+      },
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Contrôle visuel : carte uniquement ; aucune donnée de compte visible. Droits de publication non établis.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06."
+    }
+  ],
+  "illustrations": [
+    {
+      "id": "portrait-byakuya",
+      "character": "Byakuya Kuchiki",
+      "camp": "Shinigami",
+      "cardName": null,
+      "sourcePath": "client_v597/public/palace/bosses/byakuya.jpg",
+      "plannedPublicPath": "images/characters/portrait-byakuya.webp",
+      "preview": "portrait-byakuya.webp",
+      "optimizedBytes": 109910,
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Illustration seule ; aucune donnée de compte visible.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06.",
+      "sha256": "6be1b9d561ebf4db4cdac215d9e72d6fbbd8908e6468e381a83d66d5dc2c10e1"
+    },
+    {
+      "id": "portrait-yhwach",
+      "character": "Yhwach",
+      "camp": "Quincy",
+      "cardName": null,
+      "sourcePath": "client_v597/public/palace/bosses/ywach.jpg",
+      "plannedPublicPath": "images/characters/portrait-yhwach.webp",
+      "preview": "portrait-yhwach.webp",
+      "optimizedBytes": 61822,
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Illustration seule ; aucune donnée de compte visible.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06.",
+      "sha256": "508358865562375782c2948370a3b8536257f17a1ff07f54cf69647173d83016"
+    },
+    {
+      "id": "portrait-ulquiorra",
+      "character": "Ulquiorra Schifer",
+      "camp": "Hollow",
+      "cardName": null,
+      "sourcePath": "client_v597/public/palace/bosses/ulquiorra.jpg",
+      "plannedPublicPath": "images/characters/portrait-ulquiorra.webp",
+      "preview": "portrait-ulquiorra.webp",
+      "optimizedBytes": 40002,
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Illustration seule ; aucune donnée de compte visible.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06.",
+      "sha256": "c6ed1b5bb24d3c33e656645cab3668d7b0193d576ee1406f7b3b2d885d951339"
+    },
+    {
+      "id": "hero-scene",
+      "character": "Personnages du jeu",
+      "camp": "Shinigami",
+      "cardName": null,
+      "sourcePath": "client_v597/public/hub/fond-1.jpg",
+      "plannedPublicPath": "images/characters/hero-scene.webp",
+      "preview": "hero-scene.webp",
+      "optimizedBytes": 133772,
+      "authorization": "approved",
+      "rightsConfirmed": true,
+      "sensitiveDataReview": "Illustration seule ; aucune donnée de compte visible.",
+      "approvalBasis": "Explicit user authorization and confirmation of publication rights in this chat, 2026-11-06.",
+      "sha256": "fefa873e9259938551cbb4bf01ab9b062dd64cfa232a4d3d2320035310f1ca63"
+    }
+  ]
+}

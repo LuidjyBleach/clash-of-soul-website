@@ -1,0 +1,199 @@
+{
+  "cards": [
+    {
+      "id": "ichigo",
+      "cardId": "v06_ichigo_bankai",
+      "character": "Ichigo Kurosaki",
+      "camp": "Shinigami",
+      "cardName": "Ichigo Kurosaki — Bankai",
+      "form": "Bankai",
+      "rarity": "SR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "byakuya",
+      "cardId": "v029_byakuya_bankai",
+      "character": "Byakuya Kuchiki",
+      "camp": "Shinigami",
+      "cardName": "Byakuya Kuchiki — Bankai",
+      "form": "Bankai",
+      "rarity": "UR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "rukia",
+      "cardId": "v025_rukia_bankai",
+      "character": "Rukia Kuchiki",
+      "camp": "Shinigami",
+      "cardName": "Rukia Kuchiki — Bankai",
+      "form": "Bankai",
+      "rarity": "SR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "kenpachi",
+      "cardId": "v028_kenpachi_shikai",
+      "character": "Kenpachi Zaraki",
+      "camp": "Shinigami",
+      "cardName": "Kenpachi Zaraki — Shikai",
+      "form": "Shikai",
+      "rarity": "UR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "yamamoto",
+      "cardId": "v714_yamamoto_bankai",
+      "character": "Genryūsai Yamamoto",
+      "camp": "Shinigami",
+      "cardName": "Genryūsai Yamamoto — Bankai",
+      "form": "Bankai",
+      "rarity": "UR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "yhwach",
+      "cardId": "v014_yhwach_soul",
+      "character": "Yhwach",
+      "camp": "Quincy",
+      "cardName": "Yhwach — Roi spirituel",
+      "form": "Roi spirituel",
+      "rarity": "UR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "uryu",
+      "cardId": "v016_uryu",
+      "character": "Uryū Ishida",
+      "camp": "Quincy",
+      "cardName": "Uryū Ishida — Sternritter",
+      "form": "Sternritter",
+      "rarity": "UR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "bambietta",
+      "cardId": "v08_bambietta",
+      "character": "Bambietta Basterbine",
+      "camp": "Quincy",
+      "cardName": "Bambietta Basterbine — Sternritter",
+      "form": "Sternritter",
+      "rarity": "SR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "bazz-b",
+      "cardId": "v015_bazzb",
+      "character": "Bazz-B",
+      "camp": "Quincy",
+      "cardName": "Bazz-B — Sternritter",
+      "form": "Sternritter",
+      "rarity": "N",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "jugram",
+      "cardId": "v015_jugram_chaos",
+      "character": "Jugram Haschwalth",
+      "camp": "Quincy",
+      "cardName": "Jugram Haschwalth — Chaos",
+      "form": "Chaos",
+      "rarity": "UR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "ulquiorra",
+      "cardId": "v020_ulquiorra_secunda",
+      "character": "Ulquiorra Schifer",
+      "camp": "Hollow",
+      "cardName": "Ulquiorra Schifer — Secunda Etapa",
+      "form": "Secunda Etapa",
+      "rarity": "UR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "grimmjow",
+      "cardId": "v08_grimmjow_ress",
+      "character": "Grimmjow Jaggerjack",
+      "camp": "Hollow",
+      "cardName": "Grimmjow Jaggerjack — Ressurrección",
+      "form": "Ressurrección",
+      "rarity": "R",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "barragan",
+      "cardId": "v022_barragan_ress",
+      "character": "Barragan",
+      "camp": "Hollow",
+      "cardName": "Barragan — Ressurrección",
+      "form": "Ressurrección",
+      "rarity": "SR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "starrk",
+      "cardId": "v610_starrk_los_lobos",
+      "character": "Coyote Starrk",
+      "camp": "Hollow",
+      "cardName": "Coyote Starrk — Los Lobos",
+      "form": "Los Lobos",
+      "rarity": "SR",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "nelliel",
+      "cardId": "v023_nelliel_ress",
+      "character": "Nelliel",
+      "camp": "Hollow",
+      "cardName": "Nelliel — Ressurrección",
+      "form": "Ressurrección",
+      "rarity": "R",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    }
+  ],
+  "illustrations": [
+    {
+      "id": "portrait-byakuya",
+      "character": "Byakuya Kuchiki",
+      "camp": "Shinigami",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "portrait-yhwach",
+      "character": "Yhwach",
+      "camp": "Quincy",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "portrait-ulquiorra",
+      "character": "Ulquiorra Schifer",
+      "camp": "Hollow",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    },
+    {
+      "id": "hero-scene",
+      "character": "Personnages du jeu",
+      "camp": "Shinigami",
+      "authorization": "approved",
+      "rightsConfirmed": true
+    }
+  ]
+}

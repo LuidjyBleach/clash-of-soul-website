@@ -1,0 +1,51 @@
+name: Publish GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      publication_approved:
+        description: 'I explicitly approve publishing this reviewed code and its public assets'
+        required: true
+        default: false
+        type: boolean
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: ${{ github.event_name == 'push' || inputs.publication_approved == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/configure-pages@v5
+      - run: npm ci
+      - name: Refresh public release snapshot
+        run: npm run refresh-releases
+        continue-on-error: true
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run test:security
+      - run: npm run build
+      - run: npm audit --audit-level=high
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-review/
+.env*
+!.env.example
+test-results/
+test-results-public/
+playwright-report/
+*.log
