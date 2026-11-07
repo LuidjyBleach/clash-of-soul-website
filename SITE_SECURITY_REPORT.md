@@ -11,3 +11,10 @@ L’API de releases est publique, sans jeton côté navigateur. Téléchargement
 Les autorisations GitHub utilisées pour activer Pages et envoyer le code restent en mémoire du processus ; elles ne sont ni écrites dans les sources ni affichées dans les sorties. Le workflow utilise exclusivement les jetons temporaires gérés par GitHub. Les permissions d’écriture sont limitées au job de déploiement Pages.
 
 Aucune modification, release, action ou écriture n’est réalisée dans les dépôts du jeu et des mises à jour, sur Render ou dans Supabase. Le rapport de publication livré séparément indique les vérifications observées sur le site en ligne.
+
+
+## V2.1 — Captures et notes intégrées
+
+Cinq captures réelles sont publiées uniquement après masquage opaque des pseudonymes, avatars et zones de compte sélectionnées. Le propriétaire a autorisé explicitement le masquage précis par script. Avant compression, une comparaison de pixels garantit qu’aucun pixel hors des rectangles déclarés n’a été modifié. Les exports WebP conservent les proportions ; les originaux ne sont pas copiés dans le dépôt. La capture double-écran comportant conversation et Bureau est exclue. Le manifeste et les tests contrôlent les empreintes des dix exports.
+
+Les notes restent du texte React : aucun HTML de release n’est exécuté. Leurs liens sont internes au site ; le téléchargement EXE et son secours restent transparents et inchangés. Aucun proxy, jeton frontend, backend ou dépendance supplémentaire n’est ajouté. L’audit du dépôt de distribution et ses limites sont détaillés dans `UPDATES_SECURITY_AUDIT_V21.md`.

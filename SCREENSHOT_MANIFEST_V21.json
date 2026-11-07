@@ -1,0 +1,259 @@
+{
+  "screenshots": [
+    {
+      "id": "home",
+      "category": "Accueil",
+      "sourceFile": "2026-11-06 (9).png",
+      "sourceDimensions": [
+        1901,
+        1001
+      ],
+      "redactedRectangles": [
+        [
+          1360,
+          0,
+          1875,
+          58
+        ],
+        [
+          1230,
+          204,
+          1857,
+          350
+        ],
+        [
+          1770,
+          831,
+          1857,
+          902
+        ],
+        [
+          1820,
+          950,
+          1901,
+          1001
+        ]
+      ],
+      "redactionMethod": "Opaque rectangles, user explicitly authorized script masking. Outside-rectangle pixels unchanged before WebP compression.",
+      "variants": [
+        {
+          "path": "images/gameplay/home-960.webp",
+          "dimensions": [
+            960,
+            506
+          ],
+          "bytes": 60596,
+          "sha256": "7d23d1ae456106f7de4bd16f7bbfcce2dad9829d79cbf46062cbcf804a4f2a2c"
+        },
+        {
+          "path": "images/gameplay/home-1920.webp",
+          "dimensions": [
+            1901,
+            1001
+          ],
+          "bytes": 244130,
+          "sha256": "d6abc2fd51a21bd2bbe023eddff2b9ccd6aa14ecb0ea0da2281b12bbd7689d6d"
+        }
+      ],
+      "approvedForSite": true
+    },
+    {
+      "id": "duel-1",
+      "category": "Duels",
+      "sourceFile": "2026-11-07 (1).png",
+      "sourceDimensions": [
+        1875,
+        949
+      ],
+      "redactedRectangles": [
+        [
+          40,
+          62,
+          115,
+          140
+        ],
+        [
+          40,
+          563,
+          115,
+          640
+        ],
+        [
+          1777,
+          918,
+          1875,
+          949
+        ]
+      ],
+      "redactionMethod": "Opaque rectangles, user explicitly authorized script masking. Outside-rectangle pixels unchanged before WebP compression.",
+      "variants": [
+        {
+          "path": "images/gameplay/duel-1-960.webp",
+          "dimensions": [
+            960,
+            486
+          ],
+          "bytes": 107360,
+          "sha256": "877c1e4e3da867b6ae8edc344c5f8da545cdf9ee495aa755aa744d63f61425a3"
+        },
+        {
+          "path": "images/gameplay/duel-1-1920.webp",
+          "dimensions": [
+            1875,
+            949
+          ],
+          "bytes": 389496,
+          "sha256": "2599f3e334b35ced733c1f39c4af66a679d19b57f8451cb2d29a560939dc4795"
+        }
+      ],
+      "approvedForSite": true
+    },
+    {
+      "id": "duel-2",
+      "category": "Duels",
+      "sourceFile": "2026-11-07.png",
+      "sourceDimensions": [
+        1859,
+        961
+      ],
+      "redactedRectangles": [
+        [
+          33,
+          55,
+          109,
+          133
+        ],
+        [
+          33,
+          557,
+          110,
+          631
+        ],
+        [
+          1765,
+          913,
+          1859,
+          961
+        ]
+      ],
+      "redactionMethod": "Opaque rectangles, user explicitly authorized script masking. Outside-rectangle pixels unchanged before WebP compression.",
+      "variants": [
+        {
+          "path": "images/gameplay/duel-2-960.webp",
+          "dimensions": [
+            960,
+            496
+          ],
+          "bytes": 104148,
+          "sha256": "b55672265f2578b02ef5d69eabda87f4cb490c238c241ea545ac68f4925370de"
+        },
+        {
+          "path": "images/gameplay/duel-2-1920.webp",
+          "dimensions": [
+            1859,
+            961
+          ],
+          "bytes": 375752,
+          "sha256": "2b37ffd525a2dd159ed0b729314178cca1a2a73b82f7c1d0fc3e41775c92492f"
+        }
+      ],
+      "approvedForSite": true
+    },
+    {
+      "id": "collection",
+      "category": "Collection",
+      "sourceFile": "2026-11-07 (4).png",
+      "sourceDimensions": [
+        1905,
+        1009
+      ],
+      "redactedRectangles": [
+        [
+          1354,
+          0,
+          1873,
+          53
+        ],
+        [
+          1818,
+          950,
+          1905,
+          1009
+        ]
+      ],
+      "redactionMethod": "Opaque rectangles, user explicitly authorized script masking. Outside-rectangle pixels unchanged before WebP compression.",
+      "variants": [
+        {
+          "path": "images/gameplay/collection-960.webp",
+          "dimensions": [
+            960,
+            508
+          ],
+          "bytes": 78988,
+          "sha256": "382920fce34ca6bd76856bdace0a85c56b53b7bae07c6575b8eba72eedfcfb9d"
+        },
+        {
+          "path": "images/gameplay/collection-1920.webp",
+          "dimensions": [
+            1905,
+            1009
+          ],
+          "bytes": 285522,
+          "sha256": "fbd214156be3caf46fb3baa3acd1e2995334128a02005a5266043e51357abfaf"
+        }
+      ],
+      "approvedForSite": true
+    },
+    {
+      "id": "deckbuilder",
+      "category": "Constructeur de decks",
+      "sourceFile": "2026-11-07 (3).png",
+      "sourceDimensions": [
+        1899,
+        1009
+      ],
+      "redactedRectangles": [
+        [
+          1320,
+          0,
+          1870,
+          66
+        ],
+        [
+          1814,
+          961,
+          1899,
+          1009
+        ]
+      ],
+      "redactionMethod": "Opaque rectangles, user explicitly authorized script masking. Outside-rectangle pixels unchanged before WebP compression.",
+      "variants": [
+        {
+          "path": "images/gameplay/deckbuilder-960.webp",
+          "dimensions": [
+            960,
+            510
+          ],
+          "bytes": 77384,
+          "sha256": "3e721383dfce0c5ac7eea587ed82554fdb2bc74329378f33ebbd5b56681587cc"
+        },
+        {
+          "path": "images/gameplay/deckbuilder-1920.webp",
+          "dimensions": [
+            1899,
+            1009
+          ],
+          "bytes": 288636,
+          "sha256": "7b55deb926f716e340b68596e197c6234d2222e15a834f58775fb2e5382088e2"
+        }
+      ],
+      "approvedForSite": true
+    }
+  ],
+  "excluded": [
+    {
+      "sourceFile": "2026-11-07 (5).png",
+      "reason": "Double-écran comprenant une conversation et le Bureau ; ne constitue pas une capture de gameplay à publier."
+    }
+  ]
+}

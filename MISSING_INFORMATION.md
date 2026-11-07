@@ -1,7 +1,6 @@
 # Éléments restant à compléter
 
-- Trois captures authentiques de gameplay : duel, collection et constructeur, sans donnée de compte réelle visible. Les emplacements V2 sont conservés.
-- URL officielles Discord, Twitch, YouTube et contact / signalement de bugs. Les états « Bientôt disponible » sont conservés.
-- Identité publique et contact de l’éditeur, informations légales applicables à compléter selon la situation du projet.
+- Liens officiels Discord, Twitch, YouTube et contact / signalement de bugs. Aucun faux lien ajouté.
+- Identité publique et informations légales de l’éditeur à compléter selon la situation du projet.
 
-Le design V2, les cartes et illustrations ainsi que la publication sont explicitement approuvés. Aucun nouvel accord n’est nécessaire pour exécuter la publication demandée.
+Les captures de gameplay V2.1 sont intégrées après masquage des zones de compte. Les illustrations V2 restent approuvées et inchangées. Aucune intervention manuelle n’est nécessaire pour le téléchargement dans l’état public du dépôt vérifié lors de l’audit.

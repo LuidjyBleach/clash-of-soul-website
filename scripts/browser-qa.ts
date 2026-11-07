@@ -45,10 +45,30 @@ try {
     await page.locator('.real-card img').evaluateAll(async els=>{await Promise.all(els.map(el=>{(el as HTMLImageElement).loading='eager';return (el as HTMLImageElement).decode();}));});
     assert.equal(await page.locator('.real-card img').evaluateAll(els=>els.every(el=>(el as HTMLImageElement).naturalWidth>0)),true);
 
+    const badgeColors=[];
+    for(const name of ['shinigami','quincy','hollow'])badgeColors.push(await page.locator('.real-card.'+name+' .camp-badge').first().evaluate(el=>getComputedStyle(el).color));
+    assert.equal(new Set(badgeColors).size,3);
+    for(let category=0;category<4;category++){
+      await page.locator('#gameplay-tab-'+category).click();
+      await page.locator('#gameplay-panel img[src]').evaluate(async el=>{(el as HTMLImageElement).loading='eager';await (el as HTMLImageElement).decode();});
+      if(category===1){const before=await page.locator('#gameplay-panel img').getAttribute('src');await page.getByRole('button',{name:'Capture de duel suivante',exact:true}).click();assert.notEqual(await page.locator('#gameplay-panel img').getAttribute('src'),before);}
+      await page.getByRole('button',{name:/Agrandir la capture/}).click();await page.locator('.gameplay-dialog[open]').waitFor();await page.locator('.gameplay-dialog img').evaluate(el=>(el as HTMLImageElement).decode());await page.keyboard.press('Escape');assert.equal(await page.locator('.gameplay-dialog[open]').count(),0);
+    }
+    await page.locator('#gameplay-tab-0').click();
+    assert.equal(await page.locator('#actualites a[href*="github.com"]').count(),0);
+    await page.locator('.release-details summary').first().click();assert.equal(await page.locator('.release-details').first().getAttribute('open'),'');
+    assert.equal(await page.locator('.release-body').first().isVisible(),true);
     // Hide sticky chrome for section-only deliverables; hidden attributes respect the site's CSP.
     await page.locator('.header,.skip,.review-badge').evaluateAll(els=>els.forEach(el=>el.setAttribute('hidden','')));
     await page.evaluate(()=>{if(document.activeElement instanceof HTMLElement)document.activeElement.blur();});
     await page.locator('#cartes').screenshot({path:new URL(`cards-${width}.png`,out).pathname.replace(/^\/(?=[A-Za-z]:)/,'')});
+    for(let category=0;category<4;category++){
+      await page.locator('#gameplay-tab-'+category).click();
+      await page.locator('#gameplay-panel img[src]').evaluate(el=>(el as HTMLImageElement).decode());
+      await page.locator('.gameplay-gallery').screenshot({path:new URL(`gameplay-category-${category}-${width}.png`,out).pathname.replace(/^\/(?=[A-Za-z]:)/,'')});
+    }
+    await page.locator('#gameplay-tab-0').click();
+    await page.locator('#actualites').screenshot({path:new URL(`release-notes-${width}.png`,out).pathname.replace(/^\/(?=[A-Za-z]:)/,'')});
     await page.locator('.gallery').screenshot({path:new URL(`gameplay-${width}.png`,out).pathname.replace(/^\/(?=[A-Za-z]:)/,'')});
     for(const group of ['Shinigami','Quincy','Hollow']) {
       await page.getByRole('tab',{name:new RegExp(group)}).click();
@@ -87,7 +107,7 @@ try {
     if(mode==='offline'){assert.match(await page.locator('.release-status').innerText(),/GitHub indisponible/);assert.equal(await page.getByTestId('installer').getAttribute('href'),snapshot.latest!.installer!.url);}
     if(mode==='empty'){assert.equal(await page.getByTestId('installer').count(),0);assert.match(await page.locator('.news-grid').innerText(),/Aucune release/);}
     if(mode==='new-version')assert.match(await page.locator('.download-card h3').innerText(),/v8.0.0/);
-    if(mode==='unsafe-notes'){assert.equal(await page.locator('.release-body img').count(),0);assert.match(await page.locator('.release-body').innerText(),/<img/);}
+    if(mode==='unsafe-notes'){await page.locator('.release-details summary').first().click();assert.equal(await page.locator('.release-body img').count(),0);assert.match(await page.locator('.release-body').innerText(),/<img/);}
     assert.equal(await page.locator(`a[href="https://github.com/LuidjyBleach/clash-of-soul-updates/releases/latest"]`).count()>0,true);
     results.push({scenario:mode,passed:true});await context.close();
   }
