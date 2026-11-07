@@ -2,8 +2,18 @@ export const links = {
   repository: 'https://github.com/LuidjyBleach/clash-of-soul-updates',
   releases: 'https://github.com/LuidjyBleach/clash-of-soul-updates/releases',
   latest: 'https://github.com/LuidjyBleach/clash-of-soul-updates/releases/latest',
-  discord: '', twitch: '', youtube: '', contact: '',
+  discord: 'https://discord.gg/YpMH77Bw5',
+  twitch: 'https://www.twitch.tv/luidjy_skyblex',
+  tiktok: 'https://www.tiktok.com/@luidjy_',
+  youtube: 'https://www.youtube.com/@skyblex',
+  contact: '',
 };
+export const communityLinks = [
+  {title:'Discord',description:'Échangez avec la communauté',url:links.discord,label:'Rejoindre le Discord'},
+  {title:'Twitch',description:'Retrouvez les prochains directs',url:links.twitch,label:'Suivre sur Twitch'},
+  {title:'TikTok',description:'Découvrez les prochaines vidéos courtes',url:links.tiktok,label:'Suivre sur TikTok'},
+  {title:'YouTube',description:'Découvrez les prochaines vidéos',url:links.youtube,label:'Voir la chaîne YouTube'},
+] as const;
 export const releaseApi = 'https://api.github.com/repos/LuidjyBleach/clash-of-soul-updates/releases';
 // Populate only after explicit approval of each screenshot and its publication rights.
 export const gallery = [
