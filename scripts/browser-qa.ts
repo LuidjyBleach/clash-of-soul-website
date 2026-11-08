@@ -104,7 +104,7 @@ try {
       return route.fulfill({json:route.request().url().endsWith('/latest')?value:[value]});
     });
     await page.goto(base);await page.waitForFunction(()=>!document.querySelector('.release-status')?.textContent?.includes('Vérification'));
-    if(mode==='offline'){assert.match(await page.locator('.release-status').innerText(),/GitHub indisponible/);assert.equal(await page.getByTestId('installer').getAttribute('href'),snapshot.latest!.installer!.url);}
+    if(mode==='offline'){assert.match(await page.locator('.release-status').innerText(),/GitHub indisponible/);assert.equal(await page.getByTestId('installer').getAttribute('href'),'https://github.com/LuidjyBleach/clash-of-soul-updates/releases/latest');}
     if(mode==='empty'){assert.equal(await page.getByTestId('installer').count(),0);assert.match(await page.locator('.news-grid').innerText(),/Aucune release/);}
     if(mode==='new-version')assert.match(await page.locator('.download-card h3').innerText(),/v8.0.0/);
     if(mode==='unsafe-notes'){await page.locator('.release-details summary').first().click();assert.equal(await page.locator('.release-body img').count(),0);assert.match(await page.locator('.release-body').innerText(),/<img/);}

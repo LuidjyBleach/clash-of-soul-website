@@ -4,7 +4,7 @@ export type Release = { version: string; date: string; title: string; notes: str
 export type Manifest = { fetchedAt: string; latest: Release | null; releases: Release[] };
 export type ReleaseState = Manifest & { source: 'live' | 'cache' | 'snapshot'; stale: boolean };
 const prefix = links.repository + '/releases/';
-export const CACHE_KEY = 'cos-public-releases-v1';
+export const CACHE_KEY = 'cos-public-releases-v2';
 export const CACHE_TTL = 60 * 60 * 1000;
 const object = (v: unknown): Record<string, unknown> => v && typeof v === 'object' ? v as Record<string, unknown> : {};
 export function approvedReleaseUrl(value: unknown, download = false): value is string {
@@ -21,7 +21,9 @@ export function parseRelease(input: unknown): Release | null {
   const value = object(input);
   if (value.draft === true || value.prerelease === true || typeof value.tag_name !== 'string' || !approvedReleaseUrl(value.html_url)) return null;
   const assets = Array.isArray(value.assets) ? value.assets.map(object) : [];
-  const eligible = assets.filter(a => typeof a.name === 'string' && /(?:setup|installer).*\.exe$/i.test(a.name) && !/arm64|ia32|x86(?!_64)/i.test(a.name) && approvedReleaseUrl(a.browser_download_url, true) && decodeURIComponent(new URL(a.browser_download_url as string).pathname.split('/').pop()!) === a.name);
+  const windows = assets.filter(a => typeof a.name === 'string' && /\.exe$/i.test(a.name) && !/arm64|ia32|x86(?!_64)/i.test(a.name) && approvedReleaseUrl(a.browser_download_url, true) && decodeURIComponent(new URL(a.browser_download_url as string).pathname.split('/').pop()!) === a.name);
+  const installers = windows.filter(a=>/(?:setup|installer)/i.test(String(a.name)));
+  const eligible = installers.length ? installers : windows;
   // Ambiguous release: let the visitor choose on GitHub instead of guessing.
   const asset = eligible.length === 1 ? eligible[0] : null;
   return { version: value.tag_name.slice(0, 80), date: typeof value.published_at === 'string' && Number.isFinite(Date.parse(value.published_at)) ? value.published_at : '', title: typeof value.name === 'string' ? value.name.slice(0, 200) : value.tag_name, notes: typeof value.body === 'string' ? value.body.slice(0, 12000) : '', url: value.html_url, installer: asset ? { name: String(asset.name), size: typeof asset.size === 'number' && asset.size > 0 ? asset.size : 0, url: String(asset.browser_download_url) } : null };
@@ -40,23 +42,25 @@ export function validateManifest(input: unknown): Manifest | null {
 }
 export async function fetchManifest(fetcher: typeof fetch = fetch): Promise<Manifest> {
   const request = async (url: string) => {
-    const response = await fetcher(url, { headers: { Accept:'application/vnd.github+json' }, signal: AbortSignal.timeout(7000) });
+    const response = await fetcher(url, { headers: { Accept:'application/vnd.github+json' }, cache:'no-store', signal: AbortSignal.timeout(7000) });
     if (response.status === 404) return null;
     if (!response.ok) throw new Error(`GitHub ${response.status}`);
     return response.json() as Promise<unknown>;
   };
-  const [latest, history] = await Promise.all([request(releaseApi + '/latest'), request(releaseApi + '?per_page=12')]);
+  const [latestResult, historyResult] = await Promise.allSettled([request(releaseApi + '/latest'), request(releaseApi + '?per_page=12')]);
+  if(latestResult.status==='rejected')throw latestResult.reason;
+  const latest=latestResult.value;
+  const history=historyResult.status==='fulfilled'?historyResult.value:[];
   if (history !== null && !Array.isArray(history)) throw new Error('Invalid release history');
   const releases = (Array.isArray(history) ? history : []).map(parseRelease).filter((r): r is Release => !!r);
   const parsedLatest = latest === null ? null : parseRelease(latest);
   if (latest !== null && !parsedLatest) throw new Error('Invalid latest release');
-  return { fetchedAt:new Date().toISOString(), latest:parsedLatest, releases };
+  return { fetchedAt:new Date().toISOString(), latest:parsedLatest, releases:releases.length?releases:parsedLatest?[parsedLatest]:[] };
 }
 export async function loadReleases(snapshot: Manifest, storage?: Pick<Storage,'getItem'|'setItem'>, fetcher: typeof fetch = fetch, now = Date.now()): Promise<ReleaseState> {
   let cached: Manifest | null = null;
   try { cached = validateManifest(JSON.parse(storage?.getItem(CACHE_KEY) || 'null')); } catch { /* Private browsing or bad cache. */ }
-  const age = cached ? now - Date.parse(cached.fetchedAt) : Infinity;
-  if (cached && age >= 0 && age < CACHE_TTL) return { ...cached, source:'cache', stale:false };
+  // Always revalidate: a cached older release must never suppress a newly published installer.
   try {
     const live = await fetchManifest(fetcher);
     try { storage?.setItem(CACHE_KEY, JSON.stringify(live)); } catch { /* Storage is optional. */ }

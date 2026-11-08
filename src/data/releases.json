@@ -1,15 +1,15 @@
 {
-  "fetchedAt": "2026-11-06T22:33:31.927Z",
+  "fetchedAt": "2026-11-08T11:44:49.404Z",
   "latest": {
-    "version": "v7.26.1",
-    "date": "2026-11-06T18:03:25Z",
-    "title": "Bleach: Clash of Soul v7.26.1.",
-    "notes": "Bleach: Clash of Soul v7.26.1\r\n\r\n- Bouton Ouvrir x10 affiché uniquement à partir de 10 boosters.\r\n- Nouvel onglet Dos de cartes dans la Collection avec équipement direct.\r\n- Affichage des pseudonymes des joueurs en multijoueur.\r\n- Optimisation du chargement des messages et illustrations de la boîte de réception.\r\n- Améliorations de stabilité et tests de non-régression.",
-    "url": "https://github.com/LuidjyBleach/clash-of-soul-updates/releases/tag/v7.26.1",
+    "version": "v7.27.1",
+    "date": "2026-11-08T11:24:37Z",
+    "title": "Clash of Soul v7.27.1",
+    "notes": "Correctif Windows signé. Robustesse et diagnostics du système de mise à jour.",
+    "url": "https://github.com/LuidjyBleach/clash-of-soul-updates/releases/tag/v7.27.1",
     "installer": {
-      "name": "Bleach_Clash_of_Soul_v7.26.1_Setup.exe",
-      "size": 570860294,
-      "url": "https://github.com/LuidjyBleach/clash-of-soul-updates/releases/download/v7.26.1/Bleach_Clash_of_Soul_v7.26.1_Setup.exe"
+      "name": "Bleach_Clash_of_Soul_v7.27.1_Setup.exe",
+      "size": 572564183,
+      "url": "https://github.com/LuidjyBleach/clash-of-soul-updates/releases/download/v7.27.1/Bleach_Clash_of_Soul_v7.27.1_Setup.exe"
     }
   },
   "releases": [
